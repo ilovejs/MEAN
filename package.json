@@ -1,0 +1,17 @@
+{
+  "name": "vision",
+  "version": "0.0.0",
+  "description": "MEAN stack app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"no test\""
+  },
+  "author": "MZ",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~3.4.4",
+    "jade": "~0.35.0",
+    "stylus": "~0.40.2",
+    "mongoose": "~3.8.0"
+  }
+}
