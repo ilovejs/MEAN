@@ -2,71 +2,35 @@
 use nodemon / supervisor to monitor
  heroku ps:scale web=1
  heroku open
-
+ heroku log
+ heroku restart
 */
 var express = require('express');
-    stylus = require('stylus');
-    mongoose = require('mongoose');
+
 
 var app = express();
 
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-function compile(str, path){
-    return stylus(str).set('filename', path);
-}
+var config = require('./server/config/config')[env];
 
-//setting
-app.set('views', __dirname + '/server/views');
-app.set('view engine', 'jade');
-app.use(express.logger('dev'));
-app.use(express.bodyParser());
-app.use(stylus.middleware(
-    {
-        src: __dirname + '/public',
-        compile: compile
-    }
-));
-app.use(express.static(__dirname + '/public'));
-//end setting
+//return function and invoke function by passing in app, config
+require('./server/config/express')(app, config);
 
-//start mongodb setting
-//set NODE_ENV=production
-//heroku config:set NODE_ENV=production
-if(env === 'development'){
-    mongoose.connect('mongodb://localhost/multivision');
-}else{
-    mongoose.connect('mongodb://mkw:85588558@ds045628.mongolab.com:45628/heroku_app25154595');
-}
-//mongodb://localhost/multivision
+require('./server/config/mongoose')(config);
 
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error...'));
-db.once('open', function callback(){
-   console.log('heroku_app25154595 db opened');
-});
+require('./server/config/routes')(app, config);
+
 //end monogo db
 
 //set mongo schema
-var messageSchema = mongoose.Schema({message: String});
-var Message = mongoose.model('Message', messageSchema);
-var mongoMessage;
-Message.findOne().exec(function(err, messageDoc){
-    mongoMessage = messageDoc.message;
+//var messageSchema = mongoose.Schema({message: String});
+//var Message = mongoose.model('Message', messageSchema);
+//var mongoMessage;
+//Message.findOne().exec(function(err, messageDoc){
+//    mongoMessage = messageDoc.message;
+//});
 
-});
+app.listen(config.port);
 
-app.get('/partials/:partialPath', function(req, res){
-    res.render('partials/' + req.params.partialPath);
-});
-
-app.get('*', function(req, res){
-	res.render('index', {
-        mongoMessage: mongoMessage
-    });
-});
-
-var port = process.env.PORT || 3030;
-app.listen(port);
-
-console.log('Listening on port' + port + '...');
+console.log('Listening on port' + config.port + '...');
