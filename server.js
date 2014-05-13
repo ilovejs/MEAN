@@ -14,7 +14,7 @@ function compile(str, path){
 //setting
 app.set('views', __dirname + '/server/views');
 app.set('view engine', 'jade');
-app.use(express.logger('div'));
+app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(stylus.middleware(
     {
@@ -33,7 +33,7 @@ app.get('*', function(req, res){
 	res.render('index');
 });
 
-var port = 3030;
+var port = 3000;
 app.listen(port);
 
 console.log('Listening on port' + port + '...');
