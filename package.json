@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"no test\""
   },
+  "engines":{
+      "node": "0.10.x",
+      "npm": "1.4.x"
+  },
   "author": "MZ",
   "license": "ISC",
   "dependencies": {

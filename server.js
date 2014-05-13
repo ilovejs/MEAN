@@ -28,23 +28,41 @@ app.use(express.static(__dirname + '/public'));
 //end setting
 
 //start mongodb setting
-mongoose.connect('mongodb://localhost/multivision');
+//set NODE_ENV=production
+if(env === 'development'){
+    mongoose.connect('mongodb://localhost/multivision');
+}else{
+    mongoose.connect('mongodb://mkw:85588558@ds045628.mongolab.com:45628/heroku_app25154595');
+}
+//mongodb://localhost/multivision
+
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
 db.once('open', function callback(){
-   console.log('multivision db opened');
+   console.log('heroku_app25154595 db opened');
 });
 //end monogo db
+
+//set mongo schema
+var messageSchema = mongoose.Schema({message: String});
+var Message = mongoose.model('Message', messageSchema);
+var mongoMessage;
+Message.findOne().exec(function(err, messageDoc){
+    mongoMessage = messageDoc.message;
+
+});
 
 app.get('/partials/:partialPath', function(req, res){
     res.render('partials/' + req.params.partialPath);
 });
 
 app.get('*', function(req, res){
-	res.render('index');
+	res.render('index', {
+        mongoMessage: mongoMessage
+    });
 });
 
-var port = 3000;
+var port = process.env.DEFAULT_PORT || 3000;
 app.listen(port);
 
 console.log('Listening on port' + port + '...');
