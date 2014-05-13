@@ -1,5 +1,8 @@
 /*
 use nodemon / supervisor to monitor
+ heroku ps:scale web=1
+ heroku open
+
 */
 var express = require('express');
     stylus = require('stylus');
@@ -29,6 +32,7 @@ app.use(express.static(__dirname + '/public'));
 
 //start mongodb setting
 //set NODE_ENV=production
+//heroku config:set NODE_ENV=production
 if(env === 'development'){
     mongoose.connect('mongodb://localhost/multivision');
 }else{
@@ -62,7 +66,7 @@ app.get('*', function(req, res){
     });
 });
 
-var port = process.env.DEFAULT_PORT || 3000;
+var port = process.env.DEFAULT_PORT || 3030;
 app.listen(port);
 
 console.log('Listening on port' + port + '...');
