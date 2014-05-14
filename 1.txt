@@ -1,0 +1,101 @@
+2014-05-13T06:04:56.952690+00:00 app[web.1]: [90mGET /css/site.css [36m304 [90m3ms[0m
+2014-05-13T06:04:57.173555+00:00 app[web.1]: [90mGET /vendor/angular-route/angular-route.min.js [36m304 [90m2ms[0m
+2014-05-13T06:04:57.178121+00:00 app[web.1]: [90mGET /app/account/mvNavBarLoginCtrl.js [36m304 [90m1ms[0m
+2014-05-13T06:04:57.245050+00:00 heroku[router]: at=info method=GET path=/vendor/bootstrap/dist/css/bootstrap.css.map host=sleepy-fjord-4038.herokuapp.com request_id=4dcc131b-ebf5-46b4-8ae3-afde993a1661 fwd="129.94.70.250" dyno=web.1 connect=1ms service=2ms status=304 bytes=240
+2014-05-13T06:04:57.256363+00:00 heroku[router]: at=info method=GET path=/app/main/mvMainCtrl.js host=sleepy-fjord-4038.herokuapp.com request_id=59bbaaf9-a391-4d4e-ae34-88c6f294b79c fwd="129.94.70.250" dyno=web.1 connect=62ms service=14ms status=304 bytes=238
+2014-05-13T06:04:57.395733+00:00 heroku[router]: at=info method=GET path=/vendor/jquery/dist/jquery.min.map host=sleepy-fjord-4038.herokuapp.com request_id=d6daa198-29c8-4803-af4f-b1d7471b1852 fwd="129.94.70.250" dyno=web.1 connect=1ms service=2ms status=304 bytes=240
+2014-05-13T06:04:57.413107+00:00 heroku[router]: at=info method=GET path=/vendor/angular/angular.min.js.map host=sleepy-fjord-4038.herokuapp.com request_id=5dbd444a-d450-45fc-80b3-beb18f14ef79 fwd="129.94.70.250" dyno=web.1 connect=2ms service=3ms status=304 bytes=240
+2014-05-13T06:04:57.417468+00:00 heroku[router]: at=info method=GET path=/vendor/angular-resource/angular-resource.min.js.map host=sleepy-fjord-4038.herokuapp.com request_id=98917955-8a9e-4e96-837d-592a55751939 fwd="129.94.70.250" dyno=web.1 connect=0ms service=3ms status=304 bytes=238
+2014-05-13T06:04:57.420082+00:00 heroku[router]: at=info method=GET path=/vendor/angular-route/angular-route.min.js.map host=sleepy-fjord-4038.herokuapp.com request_id=5f58c027-0353-4bc6-8b2d-21951370ff71 fwd="129.94.70.250" dyno=web.1 connect=0ms service=2ms status=304 bytes=239
+2014-05-13T06:04:57.403935+00:00 app[web.1]: [90mGET /vendor/angular/angular.min.js.map [36m304 [90m1ms[0m
+2014-05-13T06:04:57.411943+00:00 app[web.1]: [90mGET /vendor/angular-resource/angular-resource.min.js.map [36m304 [90m1ms[0m
+2014-05-13T06:04:57.241290+00:00 app[web.1]: [90mGET /vendor/bootstrap/dist/css/bootstrap.css.map [36m304 [90m1ms[0m
+2014-05-13T06:04:57.391458+00:00 app[web.1]: [90mGET /vendor/jquery/dist/jquery.min.map [36m304 [90m1ms[0m
+2014-05-13T06:04:57.238040+00:00 app[web.1]: [90mGET /app/main/mvMainCtrl.js [36m304 [90m0ms[0m
+2014-05-13T06:04:57.408978+00:00 app[web.1]: [90mGET /vendor/angular-route/angular-route.min.js.map [36m304 [90m0ms[0m
+2014-05-13T06:04:57.657482+00:00 heroku[router]: at=info method=GET path=/partials/main/main host=sleepy-fjord-4038.herokuapp.com request_id=bce0c60d-5cd5-4dfe-bf26-f4b24447bbe0 fwd="129.94.70.250" dyno=web.1 connect=1ms service=18ms status=304 bytes=129
+2014-05-13T06:04:57.655237+00:00 heroku[router]: at=info method=GET path=/partials/account/navbar-login host=sleepy-fjord-4038.herokuapp.com request_id=55902cea-59fa-4baa-8587-1c0772ec3be7 fwd="129.94.70.250" dyno=web.1 connect=2ms service=17ms status=304 bytes=127
+2014-05-13T06:04:57.653832+00:00 app[web.1]: [90mGET /partials/main/main [36m304 [90m17ms[0m
+2014-05-13T06:04:57.886055+00:00 app[web.1]: [90mGET /partials/main/featured-courses [36m304 [90m2ms[0m
+2014-05-13T06:04:57.888574+00:00 heroku[router]: at=info method=GET path=/partials/main/new-courses host=sleepy-fjord-4038.herokuapp.com request_id=2c9c76e4-7a8b-4a3d-b495-655387544e6a fwd="129.94.70.250" dyno=web.1 connect=0ms service=3ms status=304 bytes=129
+2014-05-13T06:04:57.655421+00:00 app[web.1]: [90mGET /partials/account/navbar-login [36m304 [90m1ms[0m
+2014-05-13T06:04:57.888374+00:00 app[web.1]: [90mGET /partials/main/new-courses [36m304 [90m2ms[0m
+2014-05-13T06:05:00.427536+00:00 heroku[router]: at=info method=GET path=/ host=sleepy-fjord-4038.herokuapp.com request_id=6100a973-38fe-453d-a77d-882a8d26f6b8 fwd="129.94.70.250" dyno=web.1 connect=1ms service=2ms status=304 bytes=128
+2014-05-13T06:05:00.419219+00:00 app[web.1]: [90mGET / [36m304 [90m1ms[0m
+2014-05-13T06:05:00.796257+00:00 heroku[router]: at=info method=GET path=/vendor/angular-resource/angular-resource.min.js host=sleepy-fjord-4038.herokuapp.com request_id=f1cc0310-9f09-444c-a288-102b3dc42837 fwd="129.94.70.250" dyno=web.1 connect=1ms service=4ms status=304 bytes=238
+2014-05-13T06:05:00.803396+00:00 heroku[router]: at=info method=GET path=/vendor/bootstrap/dist/css/bootstrap.css host=sleepy-fjord-4038.herokuapp.com request_id=80cc5581-a66e-4bfc-9d1b-780a9181d519 fwd="129.94.70.250" dyno=web.1 connect=0ms service=3ms status=304 bytes=240
+2014-05-13T06:05:00.811770+00:00 heroku[router]: at=info method=GET path=/vendor/toastr/toastr.css host=sleepy-fjord-4038.herokuapp.com request_id=268532e9-7d9c-430b-8f72-d6afc52455c3 fwd="129.94.70.250" dyno=web.1 connect=1ms service=8ms status=304 bytes=238
+2014-05-13T06:05:00.805379+00:00 heroku[router]: at=info method=GET path=/vendor/angular/angular.min.js host=sleepy-fjord-4038.herokuapp.com request_id=90d88586-bd75-4711-ae3b-6405ca121197 fwd="129.94.70.250" dyno=web.1 connect=0ms service=4ms status=304 bytes=240
+2014-05-13T06:05:00.806752+00:00 heroku[router]: at=info method=GET path=/css/site.css host=sleepy-fjord-4038.herokuapp.com request_id=7578329c-518d-49c4-81ca-23378ccc002a fwd="129.94.70.250" dyno=web.1 connect=1ms service=10ms status=304 bytes=237
+2014-05-13T06:05:00.870414+00:00 heroku[router]: at=info method=GET path=/vendor/jquery/dist/jquery.min.js host=sleepy-fjord-4038.herokuapp.com request_id=87318539-2b5f-4dc3-b79a-9674dd1981ff fwd="129.94.70.250" dyno=web.1 connect=7ms service=9ms status=304 bytes=239
+2014-05-13T06:05:01.030685+00:00 heroku[router]: at=info method=GET path=/vendor/angular-route/angular-route.min.js host=sleepy-fjord-4038.herokuapp.com request_id=f78f8487-0a22-48e4-a67a-ba58348c9c72 fwd="129.94.70.250" dyno=web.1 connect=1ms service=3ms status=304 bytes=238
+2014-05-13T06:05:01.035217+00:00 heroku[router]: at=info method=GET path=/app/app.js host=sleepy-fjord-4038.herokuapp.com request_id=7c2f0c59-a4da-468d-827d-adea9567e313 fwd="129.94.70.250" dyno=web.1 connect=2ms service=3ms status=304 bytes=237
+2014-05-13T06:05:00.801108+00:00 app[web.1]: [90mGET /vendor/angular/angular.min.js [36m304 [90m1ms[0m
+2014-05-13T06:05:01.026852+00:00 app[web.1]: [90mGET /vendor/angular-route/angular-route.min.js [36m304 [90m1ms[0m
+2014-05-13T06:05:00.796864+00:00 app[web.1]: [90mGET /vendor/bootstrap/dist/css/bootstrap.css [36m304 [90m2ms[0m
+2014-05-13T06:05:00.806797+00:00 app[web.1]: [90mGET /vendor/toastr/toastr.css [36m304 [90m5ms[0m
+2014-05-13T06:05:01.033129+00:00 app[web.1]: [90mGET /app/app.js [36m304 [90m1ms[0m
+2014-05-13T06:05:01.037335+00:00 heroku[router]: at=info method=GET path=/app/main/mvMainCtrl.js host=sleepy-fjord-4038.herokuapp.com request_id=9eca174b-4c8a-4f6a-a589-71f2e0444e5c fwd="129.94.70.250" dyno=web.1 connect=2ms service=4ms status=304 bytes=238
+2014-05-13T06:05:00.798709+00:00 app[web.1]: [90mGET /vendor/angular-resource/angular-resource.min.js [36m304 [90m1ms[0m
+2014-05-13T06:05:00.805698+00:00 app[web.1]: [90mGET /css/site.css [36m304 [90m8ms[0m
+2014-05-13T06:05:01.033525+00:00 app[web.1]: [90mGET /app/account/mvNavBarLoginCtrl.js [36m304 [90m1ms[0m
+2014-05-13T06:05:00.858145+00:00 app[web.1]: [90mGET /vendor/jquery/dist/jquery.min.js [36m304 [90m2ms[0m
+2014-05-13T06:05:01.031119+00:00 app[web.1]: [90mGET /app/main/mvMainCtrl.js [36m304 [90m1ms[0m
+2014-05-13T06:05:01.043163+00:00 heroku[router]: at=info method=GET path=/app/account/mvNavBarLoginCtrl.js host=sleepy-fjord-4038.herokuapp.com request_id=8c6bf6b3-fce2-4d63-9c57-0ba69fa61bdc fwd="129.94.70.250" dyno=web.1 connect=1ms service=4ms status=304 bytes=237
+2014-05-13T06:05:01.136900+00:00 heroku[router]: at=info method=GET path=/vendor/jquery/dist/jquery.min.map host=sleepy-fjord-4038.herokuapp.com request_id=3c00b96a-252a-4083-957f-8dd46a902ca9 fwd="129.94.70.250" dyno=web.1 connect=0ms service=3ms status=304 bytes=240
+2014-05-13T06:05:01.263421+00:00 heroku[router]: at=info method=GET path=/vendor/angular/angular.min.js.map host=sleepy-fjord-4038.herokuapp.com request_id=2808f531-092d-4e86-b8fb-dc4ea3f2a9ba fwd="129.94.70.250" dyno=web.1 connect=0ms service=7ms status=304 bytes=240
+2014-05-13T06:05:01.262315+00:00 heroku[router]: at=info method=GET path=/vendor/angular-resource/angular-resource.min.js.map host=sleepy-fjord-4038.herokuapp.com request_id=1607b249-81b2-460c-8691-02a3eeeed19a fwd="129.94.70.250" dyno=web.1 connect=0ms service=4ms status=304 bytes=238
+2014-05-13T06:05:01.274434+00:00 heroku[router]: at=info method=GET path=/vendor/angular-route/angular-route.min.js.map host=sleepy-fjord-4038.herokuapp.com request_id=22e8bea8-4166-4eca-8224-bfa682be237d fwd="129.94.70.250" dyno=web.1 connect=1ms service=3ms status=304 bytes=239
+2014-05-13T06:05:01.056736+00:00 app[web.1]: [90mGET /vendor/bootstrap/dist/css/bootstrap.css.map [36m304 [90m1ms[0m
+2014-05-13T06:05:01.259418+00:00 app[web.1]: [90mGET /vendor/angular/angular.min.js.map [36m304 [90m4ms[0m
+2014-05-13T06:05:01.263244+00:00 app[web.1]: [90mGET /vendor/angular-route/angular-route.min.js.map [36m304 [90m1ms[0m
+2014-05-13T06:05:01.323551+00:00 heroku[router]: at=info method=GET path=/partials/account/navbar-login host=sleepy-fjord-4038.herokuapp.com request_id=95aedb87-f47b-4f36-8e3c-a1403cfe3bcd fwd="129.94.70.250" dyno=web.1 connect=2ms service=6ms status=304 bytes=127
+2014-05-13T06:05:01.324892+00:00 heroku[router]: at=info method=GET path=/partials/main/main host=sleepy-fjord-4038.herokuapp.com request_id=ef5c261d-849d-4696-a42f-fb2323555fe8 fwd="129.94.70.250" dyno=web.1 connect=3ms service=5ms status=304 bytes=129
+2014-05-13T06:05:01.260391+00:00 app[web.1]: [90mGET /vendor/angular-resource/angular-resource.min.js.map [36m304 [90m1ms[0m
+2014-05-13T06:05:01.313032+00:00 app[web.1]: [90mGET /partials/account/navbar-login [36m304 [90m2ms[0m
+2014-05-13T06:05:01.136824+00:00 app[web.1]: [90mGET /vendor/jquery/dist/jquery.min.map [36m304 [90m1ms[0m
+2014-05-13T06:05:01.321722+00:00 app[web.1]: [90mGET /partials/main/main [36m304 [90m4ms[0m
+2014-05-13T06:05:01.593176+00:00 heroku[router]: at=info method=GET path=/partials/main/new-courses host=sleepy-fjord-4038.herokuapp.com request_id=23135bad-f2df-4403-b7ce-4318ba1f723a fwd="129.94.70.250" dyno=web.1 connect=1ms service=3ms status=304 bytes=129
+2014-05-13T06:05:01.590396+00:00 heroku[router]: at=info method=GET path=/partials/main/featured-courses host=sleepy-fjord-4038.herokuapp.com request_id=fd7202d8-02aa-45b7-8c9a-cdb07827edc4 fwd="129.94.70.250" dyno=web.1 connect=1ms service=2ms status=304 bytes=127
+2014-05-13T06:05:01.591582+00:00 app[web.1]: [90mGET /partials/main/new-courses [36m304 [90m0ms[0m
+2014-05-13T06:05:01.590723+00:00 app[web.1]: [90mGET /partials/main/featured-courses [36m304 [90m1ms[0m
+2014-05-13T07:10:18.061928+00:00 heroku[web.1]: Idling
+2014-05-13T07:10:18.062400+00:00 heroku[web.1]: State changed from up to down
+2014-05-13T07:10:20.711986+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-05-13T07:10:22.459230+00:00 heroku[web.1]: Process exited with status 143
+2014-05-14T01:07:09.845146+00:00 heroku[web.1]: Unidling
+2014-05-14T01:07:09.845479+00:00 heroku[web.1]: State changed from down to starting
+2014-05-14T01:07:15.382408+00:00 app[web.1]: connect.multipart() will be removed in connect 3.0
+2014-05-14T01:07:15.387144+00:00 app[web.1]: connect.limit() will be removed in connect 3.0
+2014-05-14T01:07:15.383693+00:00 app[web.1]: visit https://github.com/senchalabs/connect/wiki/Connect-3.0 for alternatives
+2014-05-14T01:07:15.388037+00:00 app[web.1]: config.rootPath: /app
+2014-05-14T01:07:17.426990+00:00 app[web.1]: Listening on port5411...
+2014-05-14T01:07:17.553680+00:00 app[web.1]: heroku_app25154595 db opened
+2014-05-14T01:07:18.140329+00:00 heroku[web.1]: State changed from starting to up
+2014-05-14T01:07:13.870972+00:00 heroku[web.1]: Starting process with command `node server.js`
+2014-05-14T01:07:19.783832+00:00 heroku[router]: at=info method=GET path=/ host=sleepy-fjord-4038.herokuapp.com request_id=de6bbfda-7593-4e9a-9063-003db8d804c2 fwd="129.94.70.251" dyno=web.1 connect=2ms service=887ms status=304 bytes=128
+2014-05-14T01:07:19.792984+00:00 app[web.1]: [90mGET / [36m304 [90m881ms[0m
+2014-05-14T01:07:20.929917+00:00 heroku[router]: at=info method=GET path=/vendor/bootstrap/dist/css/bootstrap.css host=sleepy-fjord-4038.herokuapp.com request_id=2ccb6cb6-4685-4b70-81a3-331e076d017e fwd="129.94.70.251" dyno=web.1 connect=5ms service=16ms status=304 bytes=240
+2014-05-14T01:07:20.933829+00:00 app[web.1]: [90mGET /vendor/bootstrap/dist/css/bootstrap.css [36m304 [90m10ms[0m
+2014-05-14T01:07:21.264907+00:00 heroku[router]: at=info method=GET path=/vendor/toastr/toastr.css host=sleepy-fjord-4038.herokuapp.com request_id=484ddf66-266e-4acf-818e-37796ac5f3b3 fwd="129.94.70.251" dyno=web.1 connect=7ms service=23ms status=200 bytes=7063
+2014-05-14T01:07:21.268123+00:00 app[web.1]: [90mGET /vendor/toastr/toastr.css [32m200 [90m22ms - 6.62kb[0m
+2014-05-14T01:07:21.897222+00:00 heroku[router]: at=info method=GET path=/vendor/jquery/dist/jquery.min.js host=sleepy-fjord-4038.herokuapp.com request_id=52c79f76-26e6-4210-af01-4e530d6a0521 fwd="129.94.70.251" dyno=web.1 connect=1ms service=12ms status=304 bytes=239
+2014-05-14T01:07:22.422488+00:00 heroku[router]: at=info method=GET path=/vendor/angular-route/angular-route.min.js host=sleepy-fjord-4038.herokuapp.com request_id=1f7a8eec-51eb-438f-9aad-a0055fef8053 fwd="129.94.70.251" dyno=web.1 connect=2ms service=214ms status=200 bytes=4221
+2014-05-14T01:07:22.460941+00:00 heroku[router]: at=info method=GET path=/app/app.js host=sleepy-fjord-4038.herokuapp.com request_id=67206c5b-8d83-4f47-b100-4454cacdfdb0 fwd="129.94.70.251" dyno=web.1 connect=1ms service=6ms status=200 bytes=978
+2014-05-14T01:07:22.429478+00:00 app[web.1]: [90mGET /vendor/angular-route/angular-route.min.js [32m200 [90m25ms - 3.84kb[0m
+2014-05-14T01:07:22.407397+00:00 app[web.1]: [90mGET /vendor/angular/angular.min.js [36m304 [90m10ms[0m
+2014-05-14T01:07:22.462607+00:00 app[web.1]: [90mGET /app/app.js [32m200 [90m2ms - 692b[0m
+2014-05-14T01:07:22.425149+00:00 app[web.1]: [90mGET /vendor/angular-resource/angular-resource.min.js [32m200 [90m22ms - 3.22kb[0m
+2014-05-14T01:07:22.432936+00:00 app[web.1]: [90mGET /css/site.css [32m200 [90m308ms - 440b[0m
+2014-05-14T01:07:22.427080+00:00 heroku[router]: at=info method=GET path=/css/site.css host=sleepy-fjord-4038.herokuapp.com request_id=fc4b67ba-db76-4951-b095-6a9332acfe6b fwd="129.94.70.251" dyno=web.1 connect=2ms service=311ms status=200 bytes=727
+2014-05-14T01:07:22.955109+00:00 heroku[router]: at=info method=GET path=/app/main/mvMainCtrl.js host=sleepy-fjord-4038.herokuapp.com request_id=21dbb73e-4893-485a-aa3d-fcb36957e00d fwd="129.94.70.251" dyno=web.1 connect=16ms service=20ms status=304 bytes=238
+2014-05-14T01:07:22.950535+00:00 app[web.1]: [90mGET /app/main/mvMainCtrl.js [36m304 [90m3ms[0m
+2014-05-14T01:07:23.416259+00:00 heroku[router]: at=info method=GET path=/app/account/mvNavBarLoginCtrl.js host=sleepy-fjord-4038.herokuapp.com request_id=e52cb4da-7a2d-4119-8166-e496f78a73cd fwd="129.94.70.251" dyno=web.1 connect=5ms service=20ms status=304 bytes=237
+2014-05-14T01:07:22.460422+00:00 heroku[router]: at=info method=GET path=/vendor/angular/angular.min.js host=sleepy-fjord-4038.herokuapp.com request_id=05d61c2b-0ed7-4f5d-8232-661c5d12a15e fwd="129.94.70.251" dyno=web.1 connect=7ms service=305ms status=304 bytes=240
+2014-05-14T01:07:27.937129+00:00 heroku[router]: at=info method=GET path=/partials/account/navbar-login host=sleepy-fjord-4038.herokuapp.com request_id=55072710-0c74-48d9-a73c-3ce1bc0cb2e7 fwd="129.94.70.251" dyno=web.1 connect=1ms service=103ms status=304 bytes=127
+2014-05-14T01:07:27.994264+00:00 heroku[router]: at=info method=GET path=/partials/main/main host=sleepy-fjord-4038.herokuapp.com request_id=b157467c-95f7-46b7-8f92-1b0c45afed51 fwd="129.94.70.251" dyno=web.1 connect=11ms service=102ms status=304 bytes=129
+2014-05-14T01:07:27.941057+00:00 app[web.1]: [90mGET /partials/account/navbar-login [36m304 [90m100ms[0m
+2014-05-14T01:07:27.999095+00:00 app[web.1]: [90mGET /partials/main/main [36m304 [90m55ms[0m
+2014-05-14T01:07:28.643600+00:00 heroku[router]: at=info method=GET path=/partials/main/new-courses host=sleepy-fjord-4038.herokuapp.com request_id=89c65366-a710-41bc-bab0-b000ef05bcdd fwd="129.94.70.251" dyno=web.1 connect=1ms service=90ms status=304 bytes=129
+2014-05-14T01:07:28.725288+00:00 heroku[router]: at=info method=GET path=/partials/main/featured-courses host=sleepy-fjord-4038.herokuapp.com request_id=70fd2220-23d0-4f15-ac39-6dcd902aca08 fwd="129.94.70.251" dyno=web.1 connect=2ms service=171ms status=304 bytes=127
+2014-05-14T01:07:28.735682+00:00 app[web.1]: [90mGET /partials/main/featured-courses [36m304 [90m82ms[0m
